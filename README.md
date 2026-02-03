@@ -39,7 +39,7 @@ This application uses Cloudflare's native services:
 - **Node.js** (v18 or higher recommended)
 - **Cloudflare account** (Workers AI is included - FREE tier: 10,000 neurons/day)
 - **Git** (for cloning from GitHub)
-- No external API keys required! 🎉
+- No external API keys required! 
 
 ## Installation
 
