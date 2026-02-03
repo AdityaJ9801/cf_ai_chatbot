@@ -1,4 +1,4 @@
-#  Chat Agent Starter Kit
+# Chat Agent Starter Kit
 
 ![npm i agents command](./npm-agents-banner.svg)
 
@@ -9,21 +9,22 @@ A starter template for building AI-powered chat agents using Cloudflare's Agent 
 ** Now using Cloudflare Workers AI with Llama 3.3 70B!** This template is configured to use Cloudflare's native AI services - completely free, no external API keys needed!
 
 ### live demo: https://small-king-acb3.adityagjadhav46.workers.dev/
-## Output
-<img width="516" height="1029" alt="Screenshot 2026-02-03 100314" src="https://github.com/user-attachments/assets/0d45a120-a467-43f9-b0ac-d9d5f25ac89b" />
 
+## Output
+
+<img width="516" height="1029" alt="Screenshot 2026-02-03 100314" src="https://github.com/user-attachments/assets/0d45a120-a467-43f9-b0ac-d9d5f25ac89b" />
 
 ## Features
 
--  Interactive chat interface with AI
--  **Powered by Cloudflare Workers AI (Llama 3.3 70B Instruct FP8-Fast) - FREE!**
--  Built-in tool system with human-in-the-loop confirmation
--  Advanced task scheduling (one-time, delayed, and recurring via cron)
--  **Durable Objects for state management and coordination**
--  Dark/Light theme support
--  Real-time streaming responses
--  Persistent chat history with SQLite
--  Modern, responsive UI
+- Interactive chat interface with AI
+- **Powered by Cloudflare Workers AI (Llama 3.3 70B Instruct FP8-Fast) - FREE!**
+- Built-in tool system with human-in-the-loop confirmation
+- Advanced task scheduling (one-time, delayed, and recurring via cron)
+- **Durable Objects for state management and coordination**
+- Dark/Light theme support
+- Real-time streaming responses
+- Persistent chat history with SQLite
+- Modern, responsive UI
 
 ## Architecture
 
@@ -39,7 +40,7 @@ This application uses Cloudflare's native services:
 - **Node.js** (v18 or higher recommended)
 - **Cloudflare account** (Workers AI is included - FREE tier: 10,000 neurons/day)
 - **Git** (for cloning from GitHub)
-- No external API keys required! 
+- No external API keys required!
 
 ## Installation
 
@@ -275,11 +276,13 @@ See [Workers AI Models](https://developers.cloudflare.com/workers-ai/models/) fo
 #### Option 2: Use OpenAI (External Provider)
 
 1. Install the OpenAI provider:
+
 ```bash
 npm install @ai-sdk/openai
 ```
 
 2. Update `server.ts`:
+
 ```typescript
 import { openai } from "@ai-sdk/openai";
 
@@ -288,11 +291,13 @@ const model = openai("gpt-4o-2024-11-20");
 ```
 
 3. Create a `.dev.vars` file:
+
 ```env
 OPENAI_API_KEY=your_openai_api_key
 ```
 
 4. Deploy the secret:
+
 ```bash
 wrangler secret bulk .dev.vars
 ```
@@ -300,11 +305,13 @@ wrangler secret bulk .dev.vars
 #### Option 3: Use Anthropic Claude
 
 1. Install the Anthropic provider:
+
 ```bash
 npm install @ai-sdk/anthropic
 ```
 
 2. Update `server.ts`:
+
 ```typescript
 import { anthropic } from "@ai-sdk/anthropic";
 
@@ -390,5 +397,3 @@ Each use case can be implemented by:
 - [`agents`](https://github.com/cloudflare/agents/blob/main/packages/agents/README.md)
 - [Cloudflare Agents Documentation](https://developers.cloudflare.com/agents/)
 - [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
-
-

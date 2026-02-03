@@ -42,36 +42,41 @@ You can ask me to:
 - List your scheduled tasks
 - Or just chat with me about anything!
 
-Feel free to ask me anything! 
+Feel free to ask me anything!
 ```
 
 ## Tool Descriptions
 
 ### 1. getWeatherInformation
+
 - **Type**: Requires human confirmation
 - **Description**: Show the weather in a given city to the user
 - **Input**: `{ city: string }`
 - **Behavior**: When invoked, presents a confirmation dialog to the user before executing
 
 ### 2. getLocalTime
+
 - **Type**: Auto-executes
 - **Description**: Get the local time for a specified location
 - **Input**: `{ location: string }`
 - **Behavior**: Executes automatically without user confirmation (low-risk operation)
 
 ### 3. scheduleTask
+
 - **Type**: Auto-executes
 - **Description**: Schedule a task to be executed at a later time
 - **Input**: Schedule schema (supports scheduled date, delayed execution, or cron patterns)
 - **Behavior**: Executes automatically and creates a scheduled task in the system
 
 ### 4. getScheduledTasks
+
 - **Type**: Auto-executes
 - **Description**: List all tasks that have been scheduled
 - **Input**: `{}` (no parameters)
 - **Behavior**: Returns a list of all scheduled tasks or a message if none exist
 
 ### 5. cancelScheduledTask
+
 - **Type**: Auto-executes
 - **Description**: Cancel a scheduled task using its ID
 - **Input**: `{ taskId: string }`
@@ -85,7 +90,7 @@ To modify the main system prompt, edit the `system` parameter in `src/server.ts`
 
 ```typescript
 const result = streamText({
-  system: `Your custom system prompt here...`,
+  system: `Your custom system prompt here...`
   // ... other parameters
 });
 ```
@@ -139,4 +144,3 @@ Here are some example queries that work well with the current prompt:
 - The welcome message is only sent once when a new chat session starts (no previous messages)
 - Tool confirmations are handled by the UI for tools that require human approval
 - The schedule prompt is dynamically generated based on the current date
-
