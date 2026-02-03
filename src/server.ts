@@ -1,5 +1,9 @@
-
-import { routeAgentRequest, type Schedule, type Connection, type ConnectionContext } from "agents";
+import {
+  routeAgentRequest,
+  type Schedule,
+  type Connection,
+  type ConnectionContext
+} from "agents";
 import { getSchedulePrompt } from "agents/schedule";
 import { AIChatAgent } from "@cloudflare/ai-chat";
 import {
