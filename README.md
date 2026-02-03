@@ -1,4 +1,4 @@
-# 🤖 Chat Agent Starter Kit
+#  Chat Agent Starter Kit
 
 ![npm i agents command](./npm-agents-banner.svg)
 
