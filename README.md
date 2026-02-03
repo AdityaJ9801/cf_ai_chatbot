@@ -45,7 +45,7 @@ This application uses Cloudflare's native services:
 1. **Clone the repository:**
 
 ```bash
-https://github.com/AdityaJ9801/-cf_ai_chatbot.git
+https://github.com/AdityaJ9801/cf_ai_chatbot.git
 cd agents-starter
 ```
 
@@ -103,7 +103,7 @@ npm run deploy
 
 ### Option 3: Fork and Clone Your Own Copy
 
-1. **Fork the repository** on GitHub (click the "Fork" button at https://github.com/AdityaJ9801/-cf_ai_chatbot)
+1. **Fork the repository** on GitHub (click the "Fork" button at https://github.com/AdityaJ9801/cf_ai_chatbot)
 
 2. **Clone your fork:**
 
