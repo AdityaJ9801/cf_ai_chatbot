@@ -8,6 +8,11 @@ A starter template for building AI-powered chat agents using Cloudflare's Agent 
 
 **🚀 Now using Cloudflare Workers AI with Llama 3.3 70B!** This template is configured to use Cloudflare's native AI services - completely free, no external API keys needed!
 
+### live demo: https://small-king-acb3.adityagjadhav46.workers.dev/
+## Output
+<img width="516" height="1029" alt="Screenshot 2026-02-03 100314" src="https://github.com/user-attachments/assets/0d45a120-a467-43f9-b0ac-d9d5f25ac89b" />
+
+
 ## Features
 
 - 💬 Interactive chat interface with AI
@@ -43,7 +48,7 @@ This application uses Cloudflare's native services:
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/cloudflare/agents-starter.git
+https://github.com/AdityaJ9801/cf_ai_chatbot.git
 cd agents-starter
 ```
 
@@ -101,7 +106,7 @@ npm run deploy
 
 ### Option 3: Fork and Clone Your Own Copy
 
-1. **Fork the repository** on GitHub (click the "Fork" button at https://github.com/cloudflare/agents-starter)
+1. **Fork the repository** on GitHub (click the "Fork" button at https://github.com/AdityaJ9801/cf_ai_chatbot)
 
 2. **Clone your fork:**
 
