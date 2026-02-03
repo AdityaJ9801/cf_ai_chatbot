@@ -1,7 +1,6 @@
-import { routeAgentRequest, type Schedule } from "agents";
 
+import { routeAgentRequest, type Schedule, type Connection, type ConnectionContext } from "agents";
 import { getSchedulePrompt } from "agents/schedule";
-
 import { AIChatAgent } from "@cloudflare/ai-chat";
 import {
   generateId,
@@ -24,7 +23,7 @@ export class Chat extends AIChatAgent<Env> {
   /**
    * Override onConnect to send welcome message when user first connects
    */
-  async onConnect(connection: any, ctx: any) {
+  async onConnect(connection: Connection, ctx: ConnectionContext) {
     // Send welcome message if this is a new chat (no messages yet)
     if (this.messages.length === 0) {
       const welcomeMessage = {
@@ -75,7 +74,7 @@ Feel free to ask me anything! 😊`
   ) {
     // Initialize Workers AI with Llama 3.3 70B Instruct (Fast FP8 variant)
     const workersai = createWorkersAI({ binding: this.env.AI });
-    const model = workersai("@cf/meta/llama-3.3-70b-instruct-fp8-fast");
+    const model = workersai("@cf/meta/llama-3.3-70b-instruct-fp8-fast" as any);
 
     const stream = createUIMessageStream({
       execute: async ({ writer }) => {
