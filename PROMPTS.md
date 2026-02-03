@@ -24,17 +24,17 @@ If the user asks to schedule a task, use the schedule tool to schedule the task.
 When a user first connects to the chat (no previous messages), they receive this welcome message:
 
 ```
-👋 **Welcome! I'm your AI Assistant powered by Cloudflare Workers AI (Llama 3.3 70B)**
+**Welcome! I'm your AI Assistant powered by Cloudflare Workers AI (Llama 3.3 70B)**
 
 I'm here to help you with various tasks. Here are my capabilities:
 
-🛠️ **Available Tools:**
+**Available Tools:**
 • **Weather Information** - I can show you the weather in any city (requires your confirmation)
 • **Local Time** - Get the current time for any location
 • **Task Scheduling** - Schedule tasks to run at specific times, with delays, or on a recurring schedule
 • **Task Management** - View and cancel scheduled tasks
 
-💡 **What would you like to do today?**
+**What would you like to do today?**
 You can ask me to:
 - Check the weather in a city
 - Get the time in a location
@@ -42,7 +42,7 @@ You can ask me to:
 - List your scheduled tasks
 - Or just chat with me about anything!
 
-Feel free to ask me anything! 😊
+Feel free to ask me anything! 
 ```
 
 ## Tool Descriptions
