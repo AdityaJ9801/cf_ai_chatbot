@@ -8,6 +8,8 @@ A starter template for building AI-powered chat agents using Cloudflare's Agent 
 
 **🚀 Now using Cloudflare Workers AI with Llama 3.3 70B!** This template is configured to use Cloudflare's native AI services - completely free, no external API keys needed!
 
+### live demo: https://small-king-acb3.adityagjadhav46.workers.dev/
+
 ## Features
 
 - 💬 Interactive chat interface with AI
