@@ -6,7 +6,7 @@
 
 A starter template for building AI-powered chat agents using Cloudflare's Agent platform, powered by [`agents`](https://www.npmjs.com/package/agents). This project provides a foundation for creating interactive chat experiences with AI, complete with a modern UI and tool integration capabilities.
 
-**🚀 Now using Cloudflare Workers AI with Llama 3.3 70B!** This template is configured to use Cloudflare's native AI services - completely free, no external API keys needed!
+** Now using Cloudflare Workers AI with Llama 3.3 70B!** This template is configured to use Cloudflare's native AI services - completely free, no external API keys needed!
 
 ### live demo: https://small-king-acb3.adityagjadhav46.workers.dev/
 ## Output
@@ -15,15 +15,15 @@ A starter template for building AI-powered chat agents using Cloudflare's Agent 
 
 ## Features
 
-- 💬 Interactive chat interface with AI
-- 🤖 **Powered by Cloudflare Workers AI (Llama 3.3 70B Instruct FP8-Fast) - FREE!**
-- 🛠️ Built-in tool system with human-in-the-loop confirmation
-- 📅 Advanced task scheduling (one-time, delayed, and recurring via cron)
-- 💾 **Durable Objects for state management and coordination**
-- 🌓 Dark/Light theme support
-- ⚡️ Real-time streaming responses
-- 🔄 Persistent chat history with SQLite
-- 🎨 Modern, responsive UI
+-  Interactive chat interface with AI
+-  **Powered by Cloudflare Workers AI (Llama 3.3 70B Instruct FP8-Fast) - FREE!**
+-  Built-in tool system with human-in-the-loop confirmation
+-  Advanced task scheduling (one-time, delayed, and recurring via cron)
+-  **Durable Objects for state management and coordination**
+-  Dark/Light theme support
+-  Real-time streaming responses
+-  Persistent chat history with SQLite
+-  Modern, responsive UI
 
 ## Architecture
 
@@ -391,7 +391,4 @@ Each use case can be implemented by:
 - [Cloudflare Agents Documentation](https://developers.cloudflare.com/agents/)
 - [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
 
-## License
 
-MIT
-"# -cf_ai_chatbot" 
